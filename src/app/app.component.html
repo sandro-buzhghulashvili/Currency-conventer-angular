@@ -1,0 +1,20 @@
+<div class="container">
+<div class="swap">
+  <button (click)="swap()"><i class="fa-solid fa-right-left"></i></button>
+</div>
+<main>
+  <div class="card">
+    <select [(ngModel)]="selectValue">
+      <option *ngFor="let i of allCurrencies" value={{i}}>{{i}}</option>
+    </select>
+    <input [(ngModel)]="amount" type="number" placeholder="Enter Amount">
+  </div>
+  <div class="card">
+    <select [(ngModel)]="targetValue">
+      <option *ngFor="let i of allCurrencies" value={{i}}>{{i}}</option>
+    </select>
+    <h2 *ngIf="convertedValue">{{convertedValue}}</h2>
+    <button (click)="convert()">Convert</button>
+  </div>
+</main>
+</div>

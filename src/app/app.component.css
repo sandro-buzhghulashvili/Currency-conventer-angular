@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.card {
+    margin: 0 90px;
+    padding: 15px;
+    border: 2px solid black;
+}
+select {
+    display: block;
+    padding: 10px 80px;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+.card input {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+.card button {
+    padding: 10px 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.card h2 {
+    margin-bottom: 20px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    display: flex;
+}
+.swap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform: translateX(20px);
+}
+.swap button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: blue;
+}
